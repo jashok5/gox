@@ -186,7 +186,11 @@ var (
 		{"freebsd", "riscv64", true},
 	}, nil)
 
-	PlatformsLatest = Platforms_1_20
+	Platforms_1_23 = addDrop(Platforms_1_20, []Platform{
+		{"openbsd", "riscv64", true},
+	}, nil)
+
+	PlatformsLatest = Platforms_1_23
 )
 
 // SupportedPlatforms returns the full list of supported platforms for
